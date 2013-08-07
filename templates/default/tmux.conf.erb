@@ -42,14 +42,21 @@ bind -r L resize-pane -R 5
 # Set the default terminal mode to 256color mode
 set -g default-terminal "screen-256color"
 
-# set copy mode key bindings to vi style
+# reattach to OS X clipboard
+set-option -g default-command "reattach-to-user-namespace -l zsh"
+
+# set copy mode key bindings to vi style and pipe
+# to OS X copy buffer
 setw -g mode-keys vi
 unbind [
 bind Escape copy-mode
 unbind p
 bind p paste-buffer
-bind -t vi-copy 'v' begin-selection
-bind -t vi-copy 'y' copy-selection
+bind -t vi-copy v begin-selection
+bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
+# Update default binding of `Enter` to also use copy-pipe
+unbind -t vi-copy Enter
+bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
 
 # Maximize and restore a pane
 unbind Up
@@ -62,11 +69,6 @@ setw -g mode-mouse on
 set -g mouse-select-pane on
 set -g mouse-resize-pane on
 set -g mouse-select-window on
-
-# reattach to OS X clipboard
-set-option -g default-command "reattach-to-user-namespace -l zsh"
-bind C-c run "tmux save-buffer - | reattach-to-user-namespace pbcopy"
-bind C-v run "tmux set-buffer \"$(reattach-to-user-namespace pbpaste)\"; tmux paste-buffer"
 
 # Smart pane switching with awareness of vim splits
 bind -n C-k run-shell 'tmux-vim-select-pane -U'
