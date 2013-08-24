@@ -6,6 +6,12 @@
 #
 # MIT License
 
-template "#{ENV['HOME']}/.tmux.conf" do
-  source "tmux.conf.erb"
+dotfiles = Dir.entries(node['dotfiles_project'])
+dotfiles.delete_if {|file| file == '.' or file == '..' }
+
+dotfiles.each do |dotfile|
+  template "#{ENV['HOME']}/.#{dotfile.chomp('.erb')}" do
+    source dotfile
+    owner node['current_user']
+  end
 end
