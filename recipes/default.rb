@@ -6,10 +6,11 @@
 #
 # MIT License
 
-dotfiles = Dir.entries(node['dotfiles_project'])
-dotfiles.delete_if {|file| file == '.' or file == '..' }
+templates_dir = "#{node['dotfiles']['dotfiles_repo']}/templates/default"
+dotfile_templates = Dir.entries(templates_dir)
+dotfile_templates.delete_if {|file| file == '.' or file == '..' }
 
-dotfiles.each do |dotfile|
+dotfile_templates.each do |dotfile|
   template "#{ENV['HOME']}/.#{dotfile.chomp('.erb')}" do
     source dotfile
     owner node['current_user']
