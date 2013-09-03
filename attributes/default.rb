@@ -1,1 +1,1 @@
-default["dotfiles"]["dotfiles_repo"] = "#{ENV['HOME']}/.dotfiles"
+default["dotfiles"]["dotfiles_repo"] = "#{ENV['HOME']}/cookbooks/dotfiles"
