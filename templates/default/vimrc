@@ -20,6 +20,16 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-ruby/vim-ruby'
 
 " ========================================================================
+" Styling config
+" ========================================================================
+" Color schemes
+Bundle 'altercation/vim-colors-solarized'
+if has('gui_running')
+  set background=light
+  colorscheme solarized
+endif
+
+" ========================================================================
 " Ruby config
 " ========================================================================
 augroup myfiletypes
@@ -32,12 +42,6 @@ augroup END
 
 filetype plugin on
 runtime macros/matchit.vim
-
-" ========================================================================
-" Styling config
-" ========================================================================
-set background=light
-colorscheme solarized
 
 " ========================================================================
 " Git config
