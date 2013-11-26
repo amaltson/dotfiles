@@ -1,0 +1,49 @@
+set nocompatible              " be iMproved
+filetype off                  " required!
+
+" ========================================================================
+" Vundle stuff
+" ========================================================================
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle (required)!
+Bundle 'gmarik/vundle'
+
+" My bundles
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'vim-ruby/vim-ruby'
+
+" ========================================================================
+" Ruby config
+" ========================================================================
+augroup myfiletypes
+  " Clear old autocmds in group
+  autocmd!
+  " autoindent with two spaces, always expand tabs
+  autocmd FileType ruby,eruby,yaml setlocal ai sw=2 sts=2 et
+  autocmd FileType ruby,eruby,yaml setlocal path+=lib
+augroup END
+
+filetype plugin on
+runtime macros/matchit.vim
+
+
+" ========================================================================
+" Base config
+" ========================================================================
+syntax on                 " Enable syntax highlighting
+filetype plugin indent on " Enable filetype-specific indenting and plugins
+set autoindent
+
+map <C-s> <esc>:w<CR>
+imap <C-s> <esc>:w<CR>
+
+" Emacs-like beginning and end of line.
+imap <C-e> <c-o>$
+imap <C-a> <c-o>^
