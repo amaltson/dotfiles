@@ -33,6 +33,22 @@ augroup END
 filetype plugin on
 runtime macros/matchit.vim
 
+" ========================================================================
+" Styling config
+" ========================================================================
+set background=light
+colorscheme solarized
+
+" ========================================================================
+" Git config
+" ========================================================================
+" enable spelling while editing git commits
+if exists("b:did_ftplugin")
+    finish
+endif
+let b:did_ftplugin = 1 " Don't load twice in one buffer
+setlocal spell
+au FileType gitcommit set tw=72
 
 " ========================================================================
 " Base config
@@ -47,3 +63,9 @@ imap <C-s> <esc>:w<CR>
 " Emacs-like beginning and end of line.
 imap <C-e> <c-o>$
 imap <C-a> <c-o>^
+
+" Vim splits open in a more natural location, i.e. to
+" the right or below instead of the defaults.
+" http://robots.thoughtbot.com/post/48275867281/vim-splits-move-faster-and-more-naturally
+set splitbelow
+set splitright
