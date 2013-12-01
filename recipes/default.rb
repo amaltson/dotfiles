@@ -6,11 +6,11 @@
 #
 # MIT License
 
-dotfile_templates = %w(gemrc irbrc pryrc tmux.conf vimrc)
+dotfiles = %w(gemrc irbrc pryrc tmux.conf vimrc)
 
-dotfile_templates.each do |dotfile|
-  template "#{ENV['HOME']}/.#{dotfile}" do
-    source "#{dotfile}.erb"
+dotfiles.each do |dotfile|
+  cookbook_file "#{ENV['HOME']}/.#{dotfile}" do
+    source dotfile
     owner node['current_user']
   end
 end
