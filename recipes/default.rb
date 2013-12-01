@@ -6,13 +6,11 @@
 #
 # MIT License
 
-templates_dir = "#{node['dotfiles']['dotfiles_repo']}/templates/default"
-dotfile_templates = Dir.entries(templates_dir)
-dotfile_templates.delete_if {|file| file == '.' or file == '..' }
+dotfile_templates = %w(gemrc irbrc pryrc tmux.conf vimrc)
 
 dotfile_templates.each do |dotfile|
-  template "#{ENV['HOME']}/.#{dotfile.chomp('.erb')}" do
-    source dotfile
+  template "#{ENV['HOME']}/.#{dotfile}" do
+    source "#{dotfile}.erb"
     owner node['current_user']
   end
 end
