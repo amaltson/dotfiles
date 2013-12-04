@@ -47,13 +47,14 @@ runtime macros/matchit.vim
 " ========================================================================
 " Git config
 " ========================================================================
-" enable spelling while editing git commits
-if exists("b:did_ftplugin")
-    finish
-endif
-let b:did_ftplugin = 1 " Don't load twice in one buffer
-setlocal spell
-au FileType gitcommit set tw=72
+
+" Enable spellchecking for Markdown and git commits
+autocmd FileType markdown setlocal spell
+autocmd FileType gitcommit setlocal spell
+set complete+=kspell
+
+" Automatically wrap at 80 characters for Markdown
+autocmd BufRead,BufNewFile *.md setlocal textwidth=80
 
 " ========================================================================
 " Base config
