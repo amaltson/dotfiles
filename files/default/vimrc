@@ -45,7 +45,7 @@ filetype plugin on
 runtime macros/matchit.vim
 
 " ========================================================================
-" Git config
+" Spelling and file specific settings
 " ========================================================================
 
 " Enable spellchecking for Markdown and git commits
@@ -55,6 +55,10 @@ set complete+=kspell
 
 " Automatically wrap at 80 characters for Markdown
 autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+
+" Set spelling error to underline
+hi clear SpellBad
+hi SpellBad cterm=underline
 
 " ========================================================================
 " Base config
