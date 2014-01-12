@@ -71,8 +71,8 @@ map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>
 
 " Emacs-like beginning and end of line.
-imap <C-e> <c-o>$
-imap <C-a> <c-o>^
+imap <C-e> <C-o>$
+imap <C-a> <C-o>^
 
 " Vim splits open in a more natural location, i.e. to
 " the right or below instead of the defaults.
