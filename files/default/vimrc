@@ -82,3 +82,7 @@ set splitright
 
 " Tab for autocomplete
 inoremap <Tab> <C-P>
+
+" Let's be reasonable, shall we?
+nmap k gk
+nmap j gj
