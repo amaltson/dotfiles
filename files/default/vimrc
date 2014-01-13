@@ -66,6 +66,7 @@ hi SpellBad cterm=underline
 syntax on                 " Enable syntax highlighting
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 set autoindent
+set number
 
 map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>
