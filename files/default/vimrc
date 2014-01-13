@@ -19,6 +19,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'vim-scripts/argtextobj.vim'
+Bundle 'vim-scripts/vim_movement'
 
 " ========================================================================
 " Styling config
