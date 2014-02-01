@@ -56,7 +56,7 @@ autocmd FileType gitcommit setlocal spell
 set complete+=kspell
 
 " Automatically wrap at 80 characters for Markdown
-autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+autocmd BufRead,BufNewFile *.md,*.markdown setlocal textwidth=80
 
 " Set spelling error to underline
 hi clear SpellBad
