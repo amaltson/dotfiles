@@ -26,10 +26,10 @@ Bundle 'vim-scripts/vim_movement'
 " Styling config
 " ========================================================================
 " Color schemes
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'chriskempson/vim-tomorrow-theme'
 if has('gui_running')
-  set background=light
-  colorscheme solarized
+  set background=dark
+  colorscheme "Tomorrow-Night-Bright"
 endif
 
 " ========================================================================
