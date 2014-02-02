@@ -35,6 +35,9 @@ endif
 Bundle 'bling/vim-airline'
 set laststatus=2
 
+" Set tabs to 2 spaces
+set tabstop=2 shiftwidth=2 expandtab
+
 " ========================================================================
 " Ruby config
 " ========================================================================
