@@ -10,17 +10,21 @@ call vundle#rc()
 " let Vundle manage Vundle (required)!
 Bundle 'gmarik/vundle'
 
-" My bundles
+" Language specific bundles
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-bundler'
+
+" Vim enhancements
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'vim-scripts/argtextobj.vim'
+
+" Integration with other systems
+Bundle 'christoomey/vim-tmux-navigator'
 
 " ========================================================================
 " Styling config
