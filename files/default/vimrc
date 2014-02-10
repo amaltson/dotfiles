@@ -38,6 +38,7 @@ set laststatus=2
 
 " Set tabs to 2 spaces
 set tabstop=2 shiftwidth=2 expandtab
+set smarttab
 
 " ========================================================================
 " Ruby config
@@ -76,6 +77,9 @@ syntax on                 " Enable syntax highlighting
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 set autoindent
 set number
+
+" Make backspace key work in insert mode
+set backspace=indent,eol,start
 
 map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>
