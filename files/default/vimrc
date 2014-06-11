@@ -16,6 +16,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
+Bundle 'elixir-lang/vim-elixir'
 
 " Vim enhancements
 Bundle 'tpope/vim-endwise'
