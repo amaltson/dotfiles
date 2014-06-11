@@ -26,6 +26,7 @@ Bundle 'vim-scripts/argtextobj.vim'
 " Integration with other systems
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'scrooloose/syntastic'
+Bundle 'mileszs/ack.vim'
 
 " ========================================================================
 " Styling config
