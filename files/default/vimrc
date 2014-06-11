@@ -14,6 +14,7 @@ Bundle 'gmarik/vundle'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
 
 " Vim enhancements
