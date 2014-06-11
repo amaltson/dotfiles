@@ -25,6 +25,9 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/argtextobj.vim'
 
+" Easier navigation
+Bundle 'kien/ctrlp.vim'
+
 " Integration with other systems
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'scrooloose/syntastic'
