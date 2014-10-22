@@ -130,3 +130,6 @@ inoremap <Tab> <C-P>
 " Let's be reasonable, shall we?
 nmap k gk
 nmap j gj
+
+" Press Space to turn off highlighting and clear any message already displayed.
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
