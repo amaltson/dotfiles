@@ -30,6 +30,7 @@ Plugin 'vim-scripts/argtextobj.vim'
 
 " Easier navigation
 Plugin 'kien/ctrlp.vim'
+Plugin 'tacahiroy/ctrlp-funky'
 
 " Integration with other systems
 Plugin 'christoomey/vim-tmux-navigator'
