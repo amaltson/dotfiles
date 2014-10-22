@@ -96,6 +96,7 @@ au BufRead,BufNewFile *.md set filetype=markdown
 " Enable spellchecking for Markdown and git commits
 autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
+autocmd FileType gitcommit match ExtraWhitespace /\s\s+$/
 set complete+=kspell
 
 " Automatically wrap at 80 characters for Markdown
