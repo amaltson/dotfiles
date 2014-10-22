@@ -58,6 +58,9 @@ call vundle#end()            " required
 set tabstop=2 shiftwidth=2 expandtab
 set smarttab
 
+" Highlight searches
+set hlsearch
+
 " ========================================================================
 " Ruby config
 " ========================================================================
