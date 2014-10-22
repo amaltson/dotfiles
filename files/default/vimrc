@@ -89,6 +89,15 @@ hi clear SpellBad
 hi SpellBad cterm=underline
 
 " ========================================================================
+" Plugin configuration
+" ========================================================================
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+let g:ctrlp_custom_ignore = 'tmp$\|\.git$\|\.hg$\|\.svn$\|.rvm$|.bundle$\|vendor\|node_modules\|app/bower_components\|deploy\|coverage\|dist\|foodcritic'
+let g:ctrlp_extensions = ['funky']
+nnoremap <Leader>fu :CtrlPFunky<Cr>
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+
+" ========================================================================
 " Base config
 " ========================================================================
 syntax on                 " Enable syntax highlighting
