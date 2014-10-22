@@ -90,6 +90,9 @@ highlight def link rubyRspec Function
 " Spelling and file specific settings
 " ========================================================================
 
+" Mark *.md files as markdown
+au BufRead,BufNewFile *.md set filetype=markdown
+
 " Enable spellchecking for Markdown and git commits
 autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
