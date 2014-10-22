@@ -61,6 +61,14 @@ set smarttab
 " Highlight searches
 set hlsearch
 
+" Highlight unwanted whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
+" Set column line at 80 chars
+"set colorcolumn=80
+"highlight ColorColumn ctermbg=7
+
 " ========================================================================
 " Ruby config
 " ========================================================================
