@@ -1,0 +1,7 @@
+DEPENDENCIES
+  dotfiles
+    path: .
+    metadata: true
+
+GRAPH
+  dotfiles (0.0.1)
