@@ -78,7 +78,8 @@ endfunction
 
 " Highlight unwanted whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
+au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Set column line at 80 chars
 "set colorcolumn=80
