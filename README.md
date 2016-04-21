@@ -1,13 +1,16 @@
-# dotfiles cookbook
+# Dotfiles
 
-# Requirements
+This repository contains my dotfiles.
 
-# Usage
+## Manual Setup
+There seems to be an issue with Neovim and `C-h` overriding to move between
+split windows in Neovim. This turned out to be a iTerm2 + 256 colour issue.
+There's a long issue on the Neovim repo with [this comment being the
+solution](https://github.com/neovim/neovim/issues/2048#issuecomment-78045837).
 
-# Attributes
+```
+infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
+tic $TERM.ti
+```
 
-# Recipes
-
-# Author
-
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+This is a one time setup.
