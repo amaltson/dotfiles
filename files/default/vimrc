@@ -61,6 +61,19 @@ set smarttab
 
 " Highlight searches
 set hlsearch
+" Do incremental searching
+set incsearch
+nnoremap <Leader>fr :call VisualFindAndReplace()<CR>
+xnoremap <Leader>fr :call VisualFindAndReplaceWithSelection()<CR>
+
+function! VisualFindAndReplace()
+    :OverCommandLine%s/
+    :w
+endfunction
+function! VisualFindAndReplaceWithSelection() range
+    :'<,'>OverCommandLine s/
+    :w
+endfunction
 
 " Highlight unwanted whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
