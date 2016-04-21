@@ -21,6 +21,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'jtratner/vim-flavored-markdown'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " Vim enhancements
 Plugin 'tpope/vim-endwise'
