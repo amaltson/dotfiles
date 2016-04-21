@@ -41,11 +41,8 @@ Plugin 'mileszs/ack.vim'
 " Styling config
 " ========================================================================
 " Color schemes
-Plugin 'chriskempson/vim-tomorrow-theme'
-if has('gui_running')
-  set background=dark
-  colorscheme "Tomorrow-Night-Bright"
-endif
+set background=dark
+colorscheme base16-default
 
 " Themes
 Plugin 'bling/vim-airline'
