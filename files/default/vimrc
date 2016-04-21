@@ -115,10 +115,14 @@ let g:ctrlp_extensions = ['funky']
 nnoremap <Leader>fu :CtrlPFunky<Cr>
 nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 
+" Syntastic should use ChefDK Ruby executable
+let g:syntastic_ruby_mri_exec = '/opt/chefdk/embedded/bin/ruby'
+
 " ========================================================================
 " Base config
 " ========================================================================
 syntax on                 " Enable syntax highlighting
+
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 set autoindent
 set number
