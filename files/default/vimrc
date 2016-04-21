@@ -36,7 +36,14 @@ Plugin 'tacahiroy/ctrlp-funky'
 " Integration with other systems
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'scrooloose/syntastic'
-Plugin 'mileszs/ack.vim'
+Plugin 'rking/ag.vim'
+
+" Themes
+Plugin 'chriskempson/base16-vim'
+Plugin 'bling/vim-airline'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
 
 " ========================================================================
 " Styling config
@@ -46,11 +53,7 @@ set background=dark
 colorscheme base16-default
 
 " Themes
-Plugin 'bling/vim-airline'
 set laststatus=2
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 
 " Set tabs to 2 spaces
 set tabstop=2 shiftwidth=2 expandtab
