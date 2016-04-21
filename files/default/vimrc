@@ -3,7 +3,11 @@ set nocompatible              " be iMproved
 " ========================================================================
 " vim-plug
 " ========================================================================
-call plug#begin('~/.vim/plugged')
+if has('nvim')
+  call plug#begin('~/.config/nvim/plugged')
+else
+  call plug#begin('~/.vim/plugged')
+endif
 
 " Language specific bundles
 Plug 'pangloss/vim-javascript'
