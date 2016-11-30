@@ -51,7 +51,7 @@ call plug#end()
 " ========================================================================
 " Color schemes
 set background=dark
-colorscheme base16-default
+colorscheme base16-default-dark
 
 " Themes
 set laststatus=2
