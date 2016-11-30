@@ -52,6 +52,9 @@ call plug#end()
 " Color schemes
 set background=dark
 colorscheme base16-default-dark
+if has('nvim')
+  set termguicolors
+endif
 
 " Themes
 set laststatus=2
