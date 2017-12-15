@@ -26,6 +26,7 @@ Plug 'pearofducks/ansible-vim'
 Plug 'fatih/vim-go'
 
 " Vim enhancements
+Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -139,6 +140,12 @@ nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 
 " Syntastic should use ChefDK Ruby executable
 let g:syntastic_ruby_mri_exec = '/opt/chefdk/embedded/bin/ruby'
+
+" Easy align
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
 
 " ========================================================================
 " Base config
