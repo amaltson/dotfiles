@@ -43,6 +43,7 @@ Plug 'tacahiroy/ctrlp-funky'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/syntastic'
 Plug 'rking/ag.vim'
+Plug 'rizzatti/dash.vim'
 
 " Themes
 Plug 'chriskempson/base16-vim'
