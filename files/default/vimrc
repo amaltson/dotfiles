@@ -28,11 +28,12 @@ Plug 'fatih/vim-go'
 " Vim enhancements
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-obsession'
 Plug 'vim-scripts/argtextobj.vim'
+Plug 'airblade/vim-gitgutter'
 
 " Easier navigation
 Plug 'ctrlpvim/ctrlp.vim'
