@@ -1,6 +1,6 @@
 # Dotfiles
 
-This repository contains my dotfiles.
+This repository contains my dotfiles. 
 
 ## Manual Setup
 There seems to be an issue with Neovim and `C-h` overriding to move between
