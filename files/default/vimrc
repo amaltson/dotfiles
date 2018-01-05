@@ -52,12 +52,6 @@ Plug 'bling/vim-airline'
 " All of your Plug must be added before the following line
 call plug#end()
 
-" ========================================================================
-" Styling config
-" ========================================================================
-" Color schemes
-set background=dark
-colorscheme base16-default-dark
 if has('nvim')
   set termguicolors
 endif
@@ -201,3 +195,10 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" ========================================================================
+" Styling config
+" ========================================================================
+" Color schemes
+colorscheme base16-default-dark
+set background=dark
