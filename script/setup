@@ -14,11 +14,6 @@ for DOTFILE in dotfiles/*; do
   echo $DOTFILE | grep -q '\.sh' &&
        HOMEFILE="$HOME/.$(echo $DOTFILE | sed -e 's/\.sh//')"
 
-  if echo $DOTFILE | grep -q 'rubocop.yml'
-  then
-    HOMEFILE="$HOME/Documents/.rubocop.yml"
-  fi
-
   if [ -L "$HOMEFILE" ] && ! [ -d $DOTFILE ]
   then
     ln -sfv "$DIRFILE" "$HOMEFILE"
