@@ -3,7 +3,7 @@
 
 DOTFILESDIRREL=$(dirname $0)
 cd $DOTFILESDIRREL/..
-DOTFILESDIR=$(pwd -P)
+DOTFILESDIR=$(pwd -P)/files
 VSCODE="$HOME/Library/Application Support/Code/User"
 
 pushd dotfiles
