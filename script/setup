@@ -3,14 +3,14 @@
 
 DOTFILESDIRREL=$(dirname $0)
 cd $DOTFILESDIRREL/..
-DOTFILESDIR=$(pwd -P)/files
+DOTFILESDIR=$(pwd -P)
 VSCODE="$HOME/Library/Application Support/Code/User"
 
-pushd dotfiles
+pushd files
   for DOTFILE in *; do
     HOMEFILE="$HOME/.$DOTFILE"
     [ -d $DOTFILE ] && DOTFILE="$DOTFILE/"
-    DIRFILE="$DOTFILESDIR/$DOTFILE"
+    DIRFILE="$DOTFILESDIR/files/$DOTFILE"
 
     echo $DOTFILE | grep -q '\.sh' &&
         HOMEFILE="$HOME/.$(echo $DOTFILE | sed -e 's/\.sh//')"
