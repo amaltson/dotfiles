@@ -29,3 +29,9 @@ tic $TERM.ti
 ```
 
 This is a one time setup.
+
+### Replace Spotlight with Alfred
+
+In order to make Spotlight the primary tool for opening apps, searching, etc, change
+the keyboard shortcut for Spotlight to something else (usually ⌥Space) in:
+`Keyboard -> Keyboard Shortcuts... -> Spotlight`, then update the Alfred keyboard shortcut.
