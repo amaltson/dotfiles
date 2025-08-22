@@ -34,4 +34,11 @@ This is a one time setup.
 
 In order to make Spotlight the primary tool for opening apps, searching, etc, change
 the keyboard shortcut for Spotlight to something else (usually ⌥Space) in:
-`Keyboard -> Keyboard Shortcuts... -> Spotlight`, then update the Alfred keyboard shortcut.
+`Settings -> Keyboard -> Keyboard Shortcuts... -> Spotlight`, then update the
+Alfred keyboard shortcut.
+
+### Allow Faster Key Repeats
+
+By default the Mac has a really slow keyboard repeat, change this in `Settings
+-> Keyboard` and change `Key repeat rate` to `Fast` and `Delay until repeat` to
+the `Short`.
